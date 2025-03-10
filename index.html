@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet"> 
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="index.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+        publicKey: "vMeC3oEV4IaKD2H9b",
+         });
+       })();
+     </script>
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">CodeP.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">CodeP.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img style="border-radius:50%;" src="./assets/main.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Joy Paul</h1>
+        <p class="section__text__p2">Data Analytics</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/data-analyst-joy/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/calempaul'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Data Analyst</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors In Computer Science<br />
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi I'm Joy Paul, As a (Big) Data professional, I have a strong passion for Dashboards, Reports, Data Models, and Performance insight. Since I can map the Business requirements as a Business Analysis and data analysis Specialist and then translate them into operational with stakeholders. With Data Science experience I can also perform advanced analytics on large data sets. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Powet BI</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL(MySQL)</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Advance Excel</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Statistics</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine <br> Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Time Managment</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Story Telling</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Analytical Thinking</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Presentation Skills</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="services">
+      <p class="section__text__p1">What I Offer</p>
+      <h1 class="title">My Services</h1>
+      <div class="services-container">
+    
+        <div class="service-card" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+          <img src="https://img.freepik.com/free-vector/illustration-business-graph-analysis_53876-36922.jpg" alt="Data Analysis Icon" class="service-icon">
+          <h2>Business Decission</h2>
+          <p class="service-desc">Uncover trends, patterns, and insights from raw data using SQL, Power BI, and Python.</p>
+          <div class="service-overlay">
+            <p>Transform raw data into meaningful insights and actionable reports.</p>
+            <button class="service-btn" onclick="contactMe()">Get Started</button>
+          </div>
+        </div>     
+    
+        <div class="service-card" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+          <img src="https://img.freepik.com/free-vector/sentiment-analysis-concept-illustration_114360-5182.jpg" alt="Dashboard Design Icon" class="service-icon">
+          <h2>Dashboard Design</h2>
+          <p class="service-desc">Crafting interactive dashboards with Power BI, Excel & Looker Studio.</p>
+          <div class="service-overlay">
+            <p>Interactive dashboards for tracking business KPIs and performance.</p>
+            <button class="service-btn" onclick="contactMe()">Learn More</button>
+          </div>
+        </div>
+    
+        <div class="service-card" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+          <img src="https://img.freepik.com/free-vector/strategic-consulting-concept-illustration_114360-8994.jpg" alt="Consulting Icon" class="service-icon">
+          <h2>Data Consulting</h2>
+          <p class="service-desc">Helping businesses make smarter, data-driven decisions.</p>
+          <div class="service-overlay">
+            <p>Customized strategies to improve your data processes and automation.</p>
+            <button class="service-btn" onclick="contactMe()">Let's Talk</button>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    
+
+
+    <section id="projects ">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://img.freepik.com/free-vector/data-processing-concept-illustration_114360-4760.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Cleaning in SQL</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn project-one">
+               View Project
+              </button>    
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://img.freepik.com/free-vector/social-media-data-center-smm-stats-digital-marketing-research-market-trends-analysis-female-expert-studying-online-survey-results_335657-2392.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">PowerBI Dashbooard</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn secondProject">
+              View Project
+              </button>    
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4886.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Exploration In Python</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn project-third">
+              View Project
+              </button>    
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://img.freepik.com/free-vector/spreadsheets-concept-illustration_114360-736.jpg"
+                alt="Project 2"
+                class="project-img excelImg"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Excel In Data Analysis</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn fourProject">
+              View Project
+              </button>    
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <div class="contactme flex items-center justify-center ">
+      <section class="mailSection ">
+        <form class="mailSection shadow-lg " id="mail" type="submit">
+          <label class="reach text-2xl" for="name">Reach Me</label>
+          <input type="text" placeholder="Please Enter Your Name" id="name" class="mobiledo bg-white">
+          <input type="email" name="email" placeholder="Email" id="email" class="mobiledo  bg-white">
+          <textarea name="massage" id="text" rows="4" placeholder="Enter your massage" class="mobiledo  bg-white"></textarea>
+          <p class="button" onclick="sendMail()">submit</p>
+        </form>
+      </section>
+  
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:connect.joypaul@gmail.com">connect.joypaul@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/data-analyst-joy/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+     </div>
+   
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Joy Paul All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
